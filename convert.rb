@@ -4,7 +4,7 @@ require 'csv'
 require 'time'
 
 table = CSV::Table.new([])
-table = CSV.parse(File.read("Outage Report_December_2022.csv"), headers: true)
+table = CSV.parse(File.read("outage_report_filename.csv"), headers: true)
 
 # puts table.headers
 table.each do |row|
